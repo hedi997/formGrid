@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 class="header">Logga in</h2>
+    <div class="formContainer">
+      <form class="form" action="https://httpbin.org/anything" method="post">
+        <div class="username">
+          <label for="username">För- och efternamn</label> <br />
+          <input id="username" name="username" type="text" required />
+        </div>
+        <div class="password">
+          <label for="password">Lösenord</label> <br />
+          <input id="password" name="password" type="password" required />
+        </div>
+
+        <div class="email">
+          <label for="email">Fyll i din e-postadress</label> <br />
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="place">
+          <label for="place">Ort</label> <br />
+          <input id="place" name="place" type="text" required />
+        </div>
+
+        <div class="number">
+          <label for="number">Telefonnummer</label> <br />
+          <input type="text" name="number" id="number" required />
+        </div>
+
+        <div class="radio">
+          <p>Har du varit kund hos oss tidigare?</p>
+          <input type="radio" value="yes" name="radio" id="yes" />
+          <label for="yes">Ja</label>
+
+          <input type="radio" value="no" name="radio" id="no" />
+          <label for="no">Nej</label>
+        </div>
+
+        <p class="question">Vad handlar ditt ärende om?</p>
+        <div class="checkbox">
+          <div class="checkboxRight">
+            <input type="checkbox" value="alt1" name="alt1" id="alt1" />
+            <label for="alt1">Finansiering</label> <br />
+
+            <input type="checkbox" value="alt2" name="alt2" id="alt2" />
+            <label for="alt2">Affärsutveckling</label>
+          </div>
+
+          <div class="checkboxLeft">
+            <input type="checkbox" value="alt3" name="alt3" id="alt3" />
+            <label for="alt3">Rikskapital</label> <br />
+
+            <input type="checkbox" value="alt4" name="alt4" id="alt4" />
+            <label for="alt4">Övrigt</label>
+          </div>
+        </div>
+
+        <div class="message">
+          <label for="msg">Beskriv ditt ärende</label>
+          <textarea name="msg" id="msg" cols="45" rows="10"></textarea>
+        </div>
+
+        <div class="consent">
+          <input type="radio" value="consent" name="consent" id="consent" />
+          <label for="consent">Ja, jag samtycker till villkoren.</label>
+        </div>
+
+        <a class="link" href="https://www.almi.se/om-almi/kontakt/kontakta-oss/"
+          >Läs mer</a
+        >
+        <div class="button">
+          <button class="send" type="submit">Skicka</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
